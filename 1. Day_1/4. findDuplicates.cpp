@@ -1,7 +1,8 @@
 
 Find duplicates in O(n) time and O(1) extra space | Set 1
 
-Given an array of n elements which contains elements from 0 to n-1, with any of these numbers appearing any number of times. Find these repeating numbers in O(n) and using only constant memory space.
+Given an array of n elements which contains elements from 0 to n-1, with any of these numbers appearing any number of times. 
+Find these repeating numbers in O(n) and using only constant memory space.
 
 Input : n = 7 and array[] = {1, 2, 3, 1, 3, 6, 6}
 Output: 1, 3, 6
@@ -9,11 +10,15 @@ Output: 1, 3, 6
 
 Solution 1:
 
-    Approach:The elements in the array is from 0 to n-1 and all of them are positive. So to find out the duplicate elements, a HashMap is required, but the question is to solve the problem in constant space. There is a catch, the array is of length n and the elements are from 0 to n-1 (n elements). The array can be used as a HashMap.
-    Algorithm:
+    Approach:The elements in the array is from 0 to n-1 and all of them are positive. So to find out the duplicate elements, 
+a HashMap is required, but the question is to solve the problem in constant space. There is a catch, the array is of length n and the elements are 
+from 0 to n-1 (n elements). The array can be used as a HashMap.
+ 
+	Algorithm:
 
-        Traverse the array from start to end.
-        For every element,take its absolute value and if the abs(array[i])‘th element is positive, the element has not encountered before, else if negative the element has been encountered before print the absolute value of the current element.
+ Traverse the array from start to end.
+For every element,take its absolute value and if the abs(array[i])‘th element is positive, 
+the element has not encountered before, else if negative the element has been encountered before print the absolute value of the current element.
 
 Code :
 
